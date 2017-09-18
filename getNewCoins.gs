@@ -3,7 +3,6 @@ function setTrigger() {
   var triggerDay = new Date();
   triggerDay.setHours(triggerDay.getHours()+1);
   triggerDay.setMinutes(00);
-  Logger.log(triggerDay);
   ScriptApp.newTrigger("main").timeBased().at(triggerDay).create();
 }
 
